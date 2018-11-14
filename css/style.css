@@ -1,0 +1,286 @@
+/*------VARIABLES-------*/
+
+:root {
+    --white-text: #f4f4f4;
+}
+
+/* -------- REUSABLE -------- */
+
+.card {
+    border-radius: 20px;
+}
+
+section,
+header {
+    height: 100vh;
+}
+
+/*-----------------------*/
+
+/*-------BODY-------------*/
+
+/*------------------------*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+/*-----------------------*/
+
+/*--------BUTTONS-----------*/
+
+/*---------------------------*/
+
+/* NORMAL STATE */
+
+.btn-who,
+.nav-btn-item {
+    display: inline-block;
+    border-radius: 10px;
+    background: -webkit-gradient(linear, left top, right top, from(#c97e7e), to(#be1c1c));
+    background: linear-gradient(to right, #c97e7e, #be1c1c);
+    padding: 1px;
+}
+
+.btn-nav {
+    width: 10vw;
+    font-size: 1em;
+}
+
+.btn-who {
+    -webkit-transition: background 1.5s;
+    transition: background 1.5s;
+}
+
+.btn-scroll,
+.btn-nav {
+    font-weight: 400;
+    border-radius: 1px;
+    background: #000;
+}
+
+.btn-scroll {
+    -webkit-transition: background 1s;
+    transition: background 1s;
+}
+
+/* ACTIVE HOVER STATES */
+
+.nav-btn-item:hover {
+    background: -webkit-gradient(linear, right top, left top, from(#c97e7e), to(#be1c1c));
+    background: linear-gradient(to left, #c97e7e, #be1c1c);
+}
+
+.btn-nav:active,
+.btn-scroll:hover {
+    background: -webkit-gradient(linear, right top, left top, from(#c97e7e), to(#be1c1c));
+    background: linear-gradient(to left, #c97e7e, #be1c1c);
+}
+
+.btn-scroll:hover {
+    border-radius: 10px;
+}
+
+.btn-scroll:active {
+    background: #000;
+}
+
+.top-link:active {
+    color: #555 !important;
+}
+
+/*---------------------*/
+
+/*------ HEADER -------*/
+
+/*---------------------*/
+
+#header-me {
+    height: 100vh;
+    border: 0;
+    overflow-x: hidden;
+    border-radius: 0;
+    color: var(--white-text);
+}
+
+.bg-img {
+    -webkit-filter: brightness(20%);
+    filter: brightness(20%);
+}
+
+.btn-scroll,
+.btn-nav,
+.fa-bars {
+    color: var(--white-text);
+}
+
+h1,
+h2 {
+    font-weight: 300;
+}
+
+.text-about-me {
+    font-size: 1.3em;
+    font-size: 300;
+}
+
+/*----------------*/
+
+/*-----NAV--------*/
+
+/*----------------*/
+
+nav {
+    opacity: 0.7;
+    width: 100%;
+}
+
+nav:hover {
+    opacity: 1;
+}
+
+/*-----------------*/
+
+/*-----ABOUT ME----*/
+
+/*-----------------*/
+
+.about-me {
+    background: url(img/about-me.jpg) center no-repeat fixed;
+    background-size: cover;
+}
+
+.card-about-me {
+    background-color: #000;
+    opacity: 0.3;
+    color: var(--white-text);
+}
+
+/*-----------------*/
+
+/*-----EDUCATION----*/
+
+/*-----------------*/
+
+.edu {
+    background: url(img/card-edu.jpg) center no-repeat fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.card-edu {
+    background-color: #000;
+    opacity: 0.6;
+    color: var(--white-text);
+}
+
+/*-----------------*/
+
+/*-----SKILLS----*/
+
+/*-----------------*/
+
+.skills {
+    background: url(img/skills.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+.card-skills {
+    background-color: #000;
+    opacity: 0.7;
+    color: var(--white-text);
+}
+
+/*-----------------*/
+
+/*-----DREAMS------*/
+
+/*-----------------*/
+
+.dreams {
+    background: url(img/dreams.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+.card-dreams {
+    background: var(--white-text);
+    color: #333;
+    opacity: 0.6;
+}
+
+/*-----------------*/
+
+/*-----FOOTER----*/
+
+/*-----------------*/
+
+footer {
+    background: #111;
+    color: #555;
+}
+
+.fa-arrow-up {
+    font-size: 2em;
+}
+
+.fa-envelope,
+.fa-arrow-up,
+.fa-arrow-up:active {
+    color: #555;
+}
+
+.fa-envelope:hover,
+.fa-arrow-up:hover {
+    color: var(--white-text);
+}
+
+/* STICKY NAV */
+
+.side-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 40%;
+    right: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.btn-menu {
+    visibility: hidden;
+    background: #111;
+    color: var(--white-text);
+    font-size: 1.5em;
+    font-weight: 300;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 20%;
+    border-radius: 5px 0 0 5px;
+    padding: 5px;
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+}
+
+.btn-menu:hover,
+.btn-close:hover {
+    color: #e04a4a;
+}
+
+.nav-sticky {
+    list-style-type: none;
+    background: #111;
+    padding: 0 0 0 10px;
+    margin-right: -20vh;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.icon-nav {
+    color: var(--white-text);
+    font-size: 1.5em;
+}
+
+.icon-nav:hover {
+    color: #e04a4a;
+}

@@ -1,0 +1,59 @@
+@-webkit-keyframes shine {
+    0%{ -webkit-filter:brightness(20%); filter:brightness(20%)}
+    100%{ -webkit-filter: brightness(100%); filter: brightness(100%); }
+}
+
+@keyframes shine {
+    0%{ -webkit-filter:brightness(20%); filter:brightness(20%)}
+    100%{ -webkit-filter: brightness(100%); filter: brightness(100%); }
+}
+
+@-webkit-keyframes off {
+    0%{ -webkit-filter: brightness(100%); filter: brightness(100%)}
+    100%{ -webkit-filter: brightness(20%); filter: brightness(20%)}
+}
+
+@keyframes off {
+    0%{ -webkit-filter: brightness(100%); filter: brightness(100%)}
+    100%{ -webkit-filter: brightness(20%); filter: brightness(20%)}
+}
+
+@-webkit-keyframes disappear{
+    0%{ right: 0}
+    100%{ right: -40%}
+}
+
+@keyframes disappear{
+    0%{ right: 0}
+    100%{ right: -40%}
+}
+
+@-webkit-keyframes appear{
+    0%{  margin-right: -20vh}
+    100% {margin-right: 0}
+}
+
+@keyframes appear{
+    0%{  margin-right: -20vh}
+    100% {margin-right: 0}
+}
+
+@-webkit-keyframes btn-appear{
+    0%{ right: -40%}
+    100%{ right: 0}
+}
+
+@keyframes btn-appear{
+    0%{ right: -40%}
+    100%{ right: 0}
+}
+
+@-webkit-keyframes menu-disappear{
+    0%{  margin-right: 0}
+    100% {margin-right: -20vh}
+}
+
+@keyframes menu-disappear{
+    0%{  margin-right: 0}
+    100% {margin-right: -20vh}
+}
