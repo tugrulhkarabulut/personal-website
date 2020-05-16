@@ -132,7 +132,7 @@ h2 {
     right: 20px;
     width: 100px;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     z-index: 100;
 }
 
