@@ -67,19 +67,15 @@ body {
 
 /* ACTIVE HOVER STATES */
 
-.nav-btn-item:hover {
+.nav-btn-item:hover,
+.btn-who {
     background: -webkit-gradient(linear, right top, left top, from(#c97e7e), to(#be1c1c));
     background: linear-gradient(to left, #c97e7e, #be1c1c);
 }
 
-.btn-nav:active,
-.btn-scroll:hover {
+.btn-nav:active {
     background: -webkit-gradient(linear, right top, left top, from(#c97e7e), to(#be1c1c));
     background: linear-gradient(to left, #c97e7e, #be1c1c);
-}
-
-.btn-scroll:hover {
-    border-radius: 10px;
 }
 
 .btn-scroll:active {
@@ -127,6 +123,46 @@ h2 {
 
 /*----------------*/
 
+/*-----GITHUB--------*/
+
+/*----------------*/
+
+.my-github-page, .my-linkedin-page {
+    position: fixed;
+    right: 20px;
+    width: 100px;
+    display: flex;
+    justify-content: right;
+    z-index: 100;
+}
+
+.my-github-page {
+    top: 20px;
+}
+
+.my-linkedin-page {
+    top: 60px;
+}
+
+.github-img, .linkedin-img {
+    width: 30px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.my-github-page .tooltip-inner {
+    font-size: 10px !important;
+}
+
+.bs-tooltip-auto[x-placement^=left] .arrow::before,
+.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: #f00;
+  /* Red */
+}
+
+
+/*----------------*/
+
 /*-----NAV--------*/
 
 /*----------------*/
@@ -153,7 +189,7 @@ nav:hover {
 
 .card-about-me {
     background-color: #000;
-    opacity: 0.3;
+    opacity: 0.6;
     color: var(--white-text);
 }
 
@@ -171,7 +207,7 @@ nav:hover {
 
 .card-edu {
     background-color: #000;
-    opacity: 0.6;
+    opacity: 0.8;
     color: var(--white-text);
 }
 
@@ -188,7 +224,6 @@ nav:hover {
 
 .card-skills {
     background-color: #000;
-    opacity: 0.7;
     color: var(--white-text);
 }
 

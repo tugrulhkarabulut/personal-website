@@ -1,10 +1,14 @@
 @media (min-width: 1367px) {
+    body {
+        font-size: unset;
+    }
+    
     .lead {
-        font-size: 2em;
+        font-size: 1em;
     }
     
     .dream-text {
-        font-size: 1.7em;
+        font-size: 1em;
     }
     
     h2.card-title {
@@ -12,12 +16,12 @@
     }
     
     .card-title {
-        font-size: 2em;
+        font-size: 1.5em;
     }
     
     
     .contact-text {
-        font-size: 1em;
+        font-size: 0.8em;
     }
 }
 
